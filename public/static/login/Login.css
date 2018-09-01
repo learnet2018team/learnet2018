@@ -1,0 +1,317 @@
+:root {
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+html,
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
+#containerBackGround {
+  position: absolute;
+  right: -15px;
+  height: 100%;
+  background-repeat: repeat;
+}
+
+/*Sidenav*/
+.sidenav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  background-color: rgb(56, 56, 56);
+  transform: translateX(100%);
+  transition: all 0.3s;
+  z-index: 10;
+  -webkit-box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .sidenav {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidenav {
+    width: 30%;
+  }
+}
+
+.close-nav {
+  position: absolute;
+  font-size: 40px;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  top: 7px;
+  left: 15px;
+  padding: 0;
+  transition: ease-in .15s;
+  color: rgb(148, 148, 148);
+}
+
+.close-nav:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.sidenav a {
+  color: rgb(180, 180, 180);
+  position: relative;
+  padding-left: 0;
+  display: block;
+  left: 0;
+  width: 100%;
+  padding: 15px 5px 15px 20px;
+  transition: ease-in 0.3s
+}
+
+.sidenav a:hover {
+  text-decoration: none;
+  background-color: #0D9EFF;
+}
+
+.sidenav-show {
+  transform: translateX(0);
+}
+
+.sidenav-show::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidenav-toggler {
+  padding: 5.75rem .15rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-right: 0;
+  border-radius: .90rem 0 0 .90rem;
+  border-color: rgba(32, 32, 32, 0.815);
+  position: absolute;
+  right: 0%;
+  top: 120px;
+  height: 50%;
+  background-color: rgba(128, 128, 128, 0.5);
+  transition: all 0.3s;
+}
+
+.sidenav-toggler:focus,
+.sidenav-toggler:hover {
+  text-decoration: none;
+  background-color: #0D9EFF;
+}
+
+.sidenav-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer
+}
+
+.sidenav-header {
+  background-color: #2b2b2b;
+  height: 60px;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+.sidenav-heading {
+  position: absolute;
+  right: 20px;
+  font-size: 35px;
+  color: rgb(148, 148, 148);
+}
+
+.box5 ul li a:hover {
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  background-color: rgb(119, 119, 119);
+  width: 100%;
+  margin-right: -10px;
+}
+
+.sidenav .my-4 {
+  margin: 0 !important;
+  background-color: rgb(88, 88, 88);
+}
+
+.dropdown-menu a {
+  color: rgb(206, 206, 206);
+}
+
+.dropdown-menu a:hover {
+  background-color: #616161;
+}
+
+/*fin del sidenav*/
+form .container {
+  display: block;
+  position: absolute;
+  width: 100%;
+  max-width: 420px;
+  height: 85%;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgba(187, 187, 187, 0.39);
+  border-radius: 25px;
+  padding: 30px;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #255818;
+  min-width: 900px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+  .form-label-group>label {
+    display: none;
+  }
+
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .form-label-group>label {
+    display: none;
+  }
+
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+.mt-5 {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  bottom: 5px;
+  position: relative;
+}
+
+/*Navbar*/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+
+.texto-vertical {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 28px;
+}

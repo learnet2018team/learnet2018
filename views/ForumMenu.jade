@@ -1,0 +1,201 @@
+doctype html
+head
+    meta(http-equiv='content-type' content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='icon' href='../graduation-cap-solid.svg')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' crossorigin='anonymous')
+    title Foros - LearNet
+    // Bootstrap core CSS
+    link(href='../static/forum/bootstrap.css' rel='stylesheet')
+    // Custom styles for this template
+    link(href='../static/forum/ForumMenu.css' rel='stylesheet')
+header
+    .navbar.navbar-dark.shadow-sm
+        .container.d-flex.justify-content-between
+            a.navbar-brand.d-flex.align-items-center(href='#')
+                img#logo.img-fluid.pull-xs-left(src='../static/img/LogoImage.png' alt='LogoLN')
+                img#logoletters.img-fluid.pull-xs-left(src='../static/img/LogoLettersWhite.png' alt='Learnet')
+            button.sidenav-toggler(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+.wrapper
+    ul
+        .sidenav-togglerforum
+            li(class='añadir')
+                i.fas.fa-plus(aria-hidden='true')
+                .slider
+                    p A&ntilde;adir_Foro
+.nav-scroller.shadow-sm
+    nav.nav.nav-underline
+        a.nav-link.active(href='#') Inicio
+        a.nav-link(href='#')
+            | Foros
+            span.badge.badge-pill.bg-light.align-text-bottom 115
+        a.nav-link(href='#') Usuarios
+        a.nav-link(href='#')
+            | Siguiendo
+            span.badge.badge-pill.bg-light.align-text-bottom 12
+        a.nav-link(href='#')
+            | Mis Foros
+            span.badge.badge-pill.bg-light.align-text-bottom 0
+section.jumbotron.text-center
+    .container.jt
+        h1.jumbotron-heading Que tema buscas?
+        .input-group.mb-3
+            input.form-control(type='text' placeholder='Explora en los foros de LearNet...' aria-label="Recipient's username" aria-describedby='button-addon2')
+            .input-group-append
+                button#button-addon2.btn.btn-outline-secondary(type='button') Buscar
+.container
+    .d-flex.align-items-center.p-3.my-3.text-white-50.bg-blue.rounded.shadow-sm
+        img.mr-3(src='../static/img/LogoImage.png' alt='' width='48' height='auto')
+        .lh-100
+            h5.mb-0.text-white.lh-100 LearNet
+            small Foros
+    .my-3.p-3.bg-white.rounded.shadow-sm
+        h6.border-bottom.border-gray.pb-2.mb-0 Actualizaciones Recientes
+        .media.text-muted.pt-3(id="clickeable" onclick="location.href='ForumView';")
+            img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1' alt='32x32' style='width: 32px; height: 32px;' src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1656dcbcd68%20text%20%7B%20fill%3A%23007bff%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1656dcbcd68%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23007bff%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.166666746139526%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E' data-holder-rendered='true')
+            p.media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+                a.float-right.no-link
+                    i #
+                    |  Visitas
+                strong.d-block.text-gray-dark @username
+                a.float-right.no-link
+                    i #
+                    |  Respuestas
+                |           Titulo del Foro.
+        .media.text-muted.pt-3(id="clickeable" onclick="location.href='ForumView';")
+            img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1' alt='32x32' style='width: 32px; height: 32px;' src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1656dcbcd79%20text%20%7B%20fill%3A%23e83e8c%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1656dcbcd79%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23e83e8c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.166666746139526%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E' data-holder-rendered='true')
+            p.media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+                a.float-right.no-link
+                    i #
+                    |  Visitas
+                strong.d-block.text-gray-dark @username
+                a.float-right.no-link
+                    i #
+                    |  Respuestas
+                |           Titulo del Foro.
+        .media.text-muted.pt-3(id="clickeable" onclick="location.href='ForumView';")
+            img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1' alt='32x32' style='width: 32px; height: 32px;' src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1656dcbcd7f%20text%20%7B%20fill%3A%236f42c1%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1656dcbcd7f%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%236f42c1%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.166666746139526%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E' data-holder-rendered='true')
+            p.media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+                a.float-right.no-link
+                    i #
+                    |  Visitas
+                strong.d-block.text-gray-dark @username
+                a.float-right.no-link
+                    i #
+                    |  Respuestas
+                |           Titulo del Foro.
+        small.d-block.text-right.mt-3
+            a(href='#') Todas las Actualizaciones
+    .my-3.p-3.bg-white.rounded.shadow-sm
+        h6.border-bottom.border-gray.pb-2.mb-0 Usuarios Sugeridos
+        .media.text-muted.pt-3
+            img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1' alt='32x32' style='width: 32px; height: 32px;' src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1656dcbcd82%20text%20%7B%20fill%3A%23007bff%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1656dcbcd82%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23007bff%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.166666746139526%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E' data-holder-rendered='true')
+            .media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+                .d-flex.justify-content-between.align-items-center.w-100
+                    strong.text-gray-dark Nombre completo del usuario
+                    a(href='#') Seguir
+                span.d-block @username
+        .media.text-muted.pt-3
+            img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1' alt='32x32' style='width: 32px; height: 32px;' src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1656dcbcd86%20text%20%7B%20fill%3A%23007bff%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1656dcbcd86%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23007bff%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.166666746139526%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E' data-holder-rendered='true')
+            .media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+                .d-flex.justify-content-between.align-items-center.w-100
+                    strong.text-gray-dark Nombre completo del usuario
+                    a(href='#') Seguir
+                span.d-block @username
+        .media.text-muted.pt-3
+            img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1' alt='32x32' style='width: 32px; height: 32px;' src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1656dcbcd89%20text%20%7B%20fill%3A%23007bff%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1656dcbcd89%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23007bff%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.166666746139526%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E' data-holder-rendered='true')
+            .media-body.pb-3.mb-0.small.lh-125.border-bottom.border-gray
+                .d-flex.justify-content-between.align-items-center.w-100
+                    strong.text-gray-dark Nombre completo del usuario
+                    a(href='#') Seguir
+                span.d-block @username
+        small.d-block.text-right.mt-3
+            a(href='#') Todas las sugerencias
+footer.text-muted
+    .container
+        p.float-right
+            a.linktr(href='#') Volver arriba
+        p LearNet. La educacion a tu alcance.
+        p
+            | Eres nuevo?
+            a.linktr(href='UserRegister.jade') Registrate!
+            |  o visita nuestro
+            a.linktr(href='../Forum/ForumMenu.html') Foro
+            | . donde nuestra comunidad te ayudara sin dudarlo.
+// Sidenav Here
+.sidenav
+    .container.sidenav-header
+        .close-nav
+            i.fas.fa-times
+        span.sidenav-heading Menu
+    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        i.fas.fa-user
+        |  Usuario
+    .dropdown-menu(aria-labelledby='navbarDropdown' role='menu')
+        a.dropdown-item(href='Login') Ingresar
+        a.dropdown-item(href='https://supercable.herokuapp.com/index.php')
+            i.fas.fa-sign-in-alt
+            |  Ingresar (Beta)
+        a.dropdown-item(href='UserRegister') Registrarme
+    hr.my-4
+    a(href='Inicio' title='')
+        i.fas.fa-home
+        |  Inicio
+    a(href='layout' title='')
+        i.fas.fa-search
+        |  Buscador
+    a(href='BuscadorMaster' title='')
+        i.fas.fa-search-plus
+        |  Buscador (Beta)
+    a(href='#' title='')
+        i.fas.fa-book-reader
+        |  Blog
+    a.activesb(href='ForumMenu' title='')
+        i.fab.fa-wpforms
+        |  Foro
+    a(href='AcercaDe' title='')
+        i.fas.fa-question-circle
+        |  Acerca de
+//
+// Sidenav Forum register
+.sidenavforum
+    .container.sidenavf-header
+        .close-navforum
+            i.fas.fa-times
+    .container
+        .form-area
+            form(role='form')
+                br(style='clear:both')
+                h3(style='color: white; margin-bottom: 25px; text-align: center;') Crea un nuevo Foro!
+                .form-group
+                    input#name.form-control(type='text' name='nombre' placeholder='Nombre' required='')
+                .form-group
+                    input#email.form-control(type='text' name='correo' placeholder='Correo electronico' required='')
+                .form-group
+                    input#mobile.form-control(type='text' name='tematica' placeholder='Tematica' required='')
+                .form-group
+                    input#subject.form-control(type='text' name='asunto' placeholder='Asunto' required='')
+                .form-group
+                    textarea#cuerpo.form-control(type='textarea' placeholder='Cuerpo del foro' maxlength='500' rows='7')
+                    span.help-block
+                        p#characterLeft.help-block Has superado el limite de caracteres
+                button#submit.btn.btn-primary.pull-right(type='button' name='submit') Subir Foro
+//
+  Bootstrap core JavaScript
+  ==================================================
+// Placed at the end of the document so the pages load faster
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='../static/forum/validarCaracteres.js')
+script.
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
+script(src='../static/forum/popper.js')
+script(src='../static/forum/bootstrap.js')
+script(src='../static/forum/holder.js')
+script(src='../static/forum/offcanvas.js')
+script(src='../static/forum/sidenav.js')
+svg(xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewbox='0 0 32 32' preserveaspectratio='none' style='display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;')
+    defs
+        style(type='text/css').
+    text(x='0' y='2' style='font-weight:bold;font-size:2pt;font-family:Arial, Helvetica, Open Sans, sans-serif') 32x32

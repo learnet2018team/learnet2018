@@ -1,0 +1,105 @@
+doctype html
+head
+    title Registro de usuario - LearNet
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css' integrity='sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B' crossorigin='anonymous')
+    // Custom styles for this template
+    link(rel='stylesheet' href='../static/UserRegister/UserRegister.css')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' crossorigin='anonymous')
+header
+    .navbar.navbar-dark.shadow-sm
+        .container.d-flex.justify-content-between
+            a.navbar-brand.d-flex.align-items-center(href='#')
+                img#logo.img-fluid.pull-xs-left(src='../static/img/LogoImage.png' alt='LogoLN')
+                img#logoletters.img-fluid.pull-xs-left(src='../static/img/LogoLettersWhite.png' alt='Learnet')
+            button.sidenav-toggler(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+.card.border-primary
+    .card-header.p-0
+        .bg-info.text-white.text-center.py-2
+            h3
+                i.far.fa-user
+                |  Registrate
+            p.m-0 Para que seas parte de LearNet
+    .card-body.p-3
+        .form-group
+            .input-group.mb-2
+                .input-group-prepend
+                    .input-group-text
+                        i.fa.fa-user.text-info
+                input#nombre.form-control(type='text' name='nombre' placeholder='Nombre' required='')
+
+        .form-group
+
+            .input-group.mb-2
+                .input-group-prepend
+                    .input-group-text
+                        i.fa.fa-user.text-info
+                input#apellido.form-control(type='text' name='apellido' placeholder='Apellido' required='')
+
+        .form-group
+            .input-group.mb-2
+                .input-group-prepend
+                    .input-group-text
+                        i.fa.fa-envelope.text-info
+                input#email.form-control(type='email' name='email' placeholder='Ingresa tu e-mail: ejemplo@gmail.com' required='')
+
+        .form-group
+            .input-group.mb-2
+                .input-group-prepend
+                    .input-group-text
+                        i.fas.fa-lock.text-info
+                input#confirmpass.form-control(type='password' name='pass' placeholder='Confirma tu contraseña' required='')
+        .custom-control.custom-checkbox
+            input#customCheck1.custom-control-input(type='checkbox')
+            label.custom-control-label(for='customCheck1')
+                | He leido y estoy de acuerdo con los
+                a(href='#') Terminos y condiciones.
+        .text-center
+            input.btn.btn-info.btn-block.rounded-0.py-2(type='submit' value='Enviar')
+footer
+    p.mt-5.mb-3.text-center &copy; LearNet-2018
+// Sidenav Here
+.sidenav
+    .container.sidenav-header
+        .close-nav
+            i.fas.fa-times
+        span.sidenav-heading Menu
+    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        i.fas.fa-user
+        |  Usuario
+    .dropdown-menu(aria-labelledby='navbarDropdown' role='menu')
+        a.dropdown-item(href='Login') Ingresar
+        a.dropdown-item(href='https://supercable.herokuapp.com/index.php')
+            i.fas.fa-sign-in-alt
+            |  Ingresar (Beta)
+        a.dropdown-item(href='UserRegister') Registrarme
+    hr.my-4
+    a(href='Inicio' title='')
+        i.fas.fa-home
+        |  Inicio
+    a(href='layout' title='')
+        i.fas.fa-search
+        |  Buscador
+    a(href='BuscadorMaster' title='')
+        i.fas.fa-search-plus
+        |  Buscador (Beta)
+    a(href='#' title='')
+        i.fas.fa-book-reader
+        |  Blog
+    a.activesb(href='ForumMenu' title='')
+        i.fab.fa-wpforms
+        |  Foro
+    a(href='AcercaDe' title='')
+        i.fas.fa-question-circle
+        |  Acerca de
+//
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js' integrity='sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em' crossorigin='anonymous')
+script(src='../static/UserRegister/sidenav.js')

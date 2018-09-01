@@ -1,0 +1,21 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Search Movie Api
+    link(rel='stylesheet' href='https://bootswatch.com/4/cyborg/bootstrap.min.css')
+    link(rel='stylesheet' href='../stylesheets/styles.css')
+nav.navbar.navbar-default
+    .container
+        .navbar-header
+.container
+    .jumbotron
+        h3.text-center  Busca Cualquier Curso
+        form#seachForm(action='')
+            input#searchText.form-control(type='text' placeholder='Search.....')
+.container
+    #movies.row
+// cdn the jquery
+script(src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous')
+// cdn the AXIOS
+script(src='https://unpkg.com/axios/dist/axios.min.js')
+script(src='../javascripts/main.js')

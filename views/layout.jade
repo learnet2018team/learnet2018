@@ -1,0 +1,193 @@
+doctype html
+head
+    meta(http-equiv='content-type' content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' crossorigin='anonymous')
+    link(rel='icon' href='../../Learnet/learnet/graduation-cap-solid.svg')
+    title LearNet - Buscador
+    // Bootstrap core CSS
+    link(href='static/bootstrap.css' rel='stylesheet')
+    // Custom styles for this template
+    link(href='static/SearchPage.css' rel='stylesheet')
+    link(rel='stylesheet' href='static/animations.css')
+header
+    .navbar.navbar-dark.shadow-sm
+        .container.d-flex.justify-content-between
+            a.navbar-brand.d-flex.align-items-center(href='#')
+                img#logo.img-fluid.pull-xs-left(src='static/img/LogoImage.png' alt='LogoLN')
+                img#logoletters.img-fluid.pull-xs-left(src='static/img/LogoLettersWhite.png' alt='Learnet')
+            button.sidenav-toggler(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+main(role='main')
+    #carouselExampleSlidesOnly.carousel.slide(data-ride='carousel')
+        .carousel-inner
+            .carousel-item.active
+                img.d-block.w-100(src='http://www.revistagenteqroo.com/wp-content/uploads/2018/03/bbva-educacion-e1464704439593-1920x0-c-f.jpg' alt='First slide')
+            .carousel-item
+                img.d-block.w-100(src='https://www.ruizhealytimes.com/sites/default/files/styles/articles_horizontal/public/articles/2017/11/educacion-financiera.jpg?itok=nFni0Hgw' alt='Second slide')
+            .carousel-item
+                img.d-block.w-100(src='http://noticias.universia.com.bo/net/images/educacion/e/ed/edu/educacion-online-1449602231545.png' alt='Third slide')
+            section.jumbotron.text-center
+                .container
+                    h1.jumbotron-heading Que deseas buscar hoy?
+                    .input-group.mb-3
+                        input.form-control(type='text' placeholder='Explora lugares, cursos virtuales, paginas web...' aria-label="Recipient's username" aria-describedby='button-addon2')
+                        .input-group-append
+                            button#button-addon2.btn.btn-outline-secondary(type='button') Buscar
+.container.mt-40
+    h3.text-center Nuevas Plataformas de Aprendizaje
+    .row.mt-30
+        .col-md-4.col-sm-6
+            .box5
+                img(src='https://static.platzi.com/media/courses/OG-Programacion-basica-2017.png' alt='')
+                ul.icon
+                    li
+                        a.fa.fa-search(href='#')
+                    li
+                        a.fa.fa-link(href='#')
+                .box-content
+                    h3.title Platzi
+                    span.post Programacion Basica
+                    br
+                    span.post Gratuito
+                    br
+                    span.post Aprende desde hoy
+        .col-md-4.col-sm-6
+            .box5
+                img(src='https://static.platzi.com/media/courses/opengraph-node-js-2017_1.png' alt='')
+                ul.icon
+                    li
+                        a.fa.fa-search(href='#')
+                    li
+                        a.fa.fa-link(href='https://platzi.com/cursos/programacion-basica/' target='_blank')
+                .box-content
+                    h3.title Platzi
+                    span.post Curso avanzado de
+                    br
+                    span.post Node.js
+                    br
+                    span.post Aprende desde hoy
+        .col-md-4.col-sm-6
+            .box5
+                img(src='http://i1.wp.com/emprendedoresnews.com/wp-content/uploads/2017/10/opengraph-webpack-e1509394827716.png?fit=630%2C329' alt='')
+                ul.icon
+                    li
+                        a.fa.fa-search(href='#')
+                    li
+                        a.fa.fa-link(href='#')
+                .box-content
+                    h3.title Platzi
+                    span.post Curso de
+                    br
+                    span.post WebPack
+                    br
+                    span.post Aprende desde hoy
+
+.container.mt-40
+    h3.text-center Equipo
+    .row.mt-30
+        .col-md-4.col-sm-6
+            .box13
+                img(src='http://www.vortexits.com/assets/images/avatar/cargo-desarrollador-Mobile-Avatar.png')
+                .box-content
+                    h3.title Juan
+                    span.post Web Designer
+                    ul.social
+                        li
+                            a(href='#')
+                                i.fa.fa-facebook
+                        li
+                            a(href='#')
+                                i.fa.fa-twitter
+        .col-md-4.col-sm-6
+            .box13
+                img(src='http://www.vortexits.com/assets/images/avatar/cargo-desarrollador-Mobile-Avatar.png')
+                .box-content
+                    h3.title Jeffer
+                    span.post Web Developer
+                    ul.social
+                        li
+                            a(href='#')
+                                i.fa.fa-facebook
+                        li
+                            a(href='#')
+                                i.fa.fa-twitter
+        .col-md-4.col-sm-6
+            .box13
+                img(src='http://www.vortexits.com/assets/images/avatar/cargo-desarrollador-Mobile-Avatar.png')
+                .box-content
+                    h3.title Camilo
+                    span.post Backend Developer
+                    ul.social
+                        li
+                            a(href='#')
+                                i.fa.fa-facebook
+                        li
+                            a(href='#')
+                                i.fa.fa-twitter
+
+//                    ********************************
+footer.text-muted
+    .container
+        p.float-right
+            a(href='#') Volver arriba
+        p LearNet. La educacion a tu alcance.
+        p
+            | Eres nuevo?
+            a(href='/html_master/UserRegister.jade') Registrate!
+            |  o visita nuestro
+            a(href='/html_master/ForumMenu.jade') Foro
+            | . donde nuestra comunidad te ayudara sin dudarlo.
+// Sidenav Here
+.sidenav
+    .container.sidenav-header
+        .close-nav
+            i.fas.fa-times
+        span.sidenav-heading Menu
+    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        i.fas.fa-user
+        |  Usuario
+    .dropdown-menu(aria-labelledby='navbarDropdown' role='menu')
+        a.dropdown-item(href='Login') Ingresar
+        a.dropdown-item(href='https://supercable.herokuapp.com/index.php')
+            i.fas.fa-sign-in-alt
+            |  Ingresar (Beta)
+        a.dropdown-item(href='UserRegister') Registrarme
+    hr.my-4
+    a(href='Inicio' title='')
+        i.fas.fa-home
+        |  Inicio
+    a(href='layout' title='')
+        i.fas.fa-search
+        |  Buscador
+    a(href='BuscadorMaster' title='')
+        i.fas.fa-search-plus
+        |  Buscador (Beta)
+    a(href='#' title='')
+        i.fas.fa-book-reader
+        |  Blog
+    a.activesb(href='ForumMenu' title='')
+        i.fab.fa-wpforms
+        |  Foro
+    a(href='AcercaDe' title='')
+        i.fas.fa-question-circle
+        |  Acerca de
+//
+  Bootstrap core JavaScript
+  ==================================================
+// Placed at the end of the document so the pages load faster
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script.
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
+script(src='static/popper.js')
+script(src='static/bootstrap.js')
+script(src='static/holder.js')
+script(src='static/sidenav.js')
+svg(xmlns='http://www.w3.org/2000/svg' width='348' height='225' viewbox='0 0 348 225' preserveaspectratio='none' style='display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;')
+    defs
+        style(type='text/css').
+    text(x='0' y='17' style='font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif') Thumbnail

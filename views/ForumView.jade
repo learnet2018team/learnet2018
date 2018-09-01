@@ -1,0 +1,122 @@
+doctype html
+head
+    title Foros - LearNet
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='icon' href='../graduation-cap-solid.svg')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' crossorigin='anonymous')
+    // Bootstrap CSS
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css' integrity='sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B' crossorigin='anonymous')
+    // Custom styles for this template
+    link(href='../static/forum/ForumView.css' rel='stylesheet')
+// NavBar
+header
+    .navbar.navbar-dark.shadow-sm
+        .container.d-flex.justify-content-between
+            a.navbar-brand.d-flex.align-items-center(href='#')
+                img#logo.img-fluid.pull-xs-left(src='../static/img/LogoImage.png' alt='LogoLN')
+                img#logoletters.img-fluid.pull-xs-left(src='../static/img/LogoLettersWhite.png' alt='Learnet')
+            button.sidenav-toggler(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+// end of NavBar
+.container-fluid.forumContent
+    p.lead.font-weight-bold(style='width: 200px;')
+        | Titulo del foro.
+    small(style='position: absolute;top: 48px;font-style: italic;opacity: 0.7;') Ultima actualizacion hace N dias.
+    p.float-right(style='font-size:13px;position: absolute; top:25px;margin: 0;right: 25px;opacity: 0.8;')
+        | Subido el dd de (mes) del a&ntilde;o (a&ntilde;o).
+    hr.my-4
+    p.lead
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rem dignissimos nobis quos repellendus veniam deleniti
+        | exercitationem, iste, id vero reiciendis voluptatibus ullam aut officiis eos, voluptatum praesentium? Omnis,
+        | cumque.
+    hr.my-4.mg-bottom-0
+    footer.text-muted.footercontent
+        .container.d-flex.align-items-center
+            img.mr-2.rounded(data-src='holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1' alt='32x32' style='width: 45px; height: 45px;' src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1656dcbcd68%20text%20%7B%20fill%3A%23007bff%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A2pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1656dcbcd68%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23007bff%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2212.166666746139526%22%20y%3D%2216.9%22%3E32x32%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E' data-holder-rendered='true')
+            .lh-100
+                h5.mb-0.text-white.lh-100
+                    a.linktr(href='#') @username
+                small Nombre completo del usuario
+.container.forumRta
+    .form-area
+        form(role='form')
+            h3 Responde a este foro:
+            .form-group
+                textarea#cuerpo.form-control(type='textarea' placeholder='Escribe aqui la respuesta' maxlength='800' rows='7')
+                span.help-block
+                    p#characterLeft.help-block Has superado el limite de caracteres
+            button#submit.btn.btn-primary.pull-right(type='button' name='submit') Subir Respuesta
+.col-md-12
+    h2.h2Share Compartir:
+    ul.social-network.social-circle
+        li
+            a.icoGitHub(href='https://github.com/learnet2018team/learnet2018' title='GitHub' target="blank_")
+                i.fab.fa-github
+        li
+            a.icoFacebook(href='https://www.facebook.com/LearNet-230531154283168/' title='Facebook' target="blank_")
+                i.fab.fa-facebook-f
+        li
+            a.icoTwitter(href='https://twitter.com/_LearNet' title='Twitter' target="blank_")
+                i.fab.fa-twitter
+        li
+            a.icoGoogle(href='https://plus.google.com/u/3/116885909944570313303' title='Google +' target="blank_")
+                i.fab.fa-google-plus-g
+        li
+            a.icoLinkedin(href='https://www.linkedin.com/in/learnet-47a99b16b/' title='Linkedin' target="blank_")
+                i.fab.fa-linkedin-in
+footer.text-muted
+    .container
+        p.float-right
+            a.linktr(href='#') Volver arriba
+        p LearNet. La educacion a tu alcance.
+        p
+            | Eres nuevo?
+            a.linktr(href='UserRegister.jade') Registrate!
+            |  o visita nuestro
+            a.linktr(href='ForumMenu.jade') Foro
+            | . donde nuestra comunidad te ayudara sin dudarlo.
+// Sidenav Here
+.sidenav
+    .container.sidenav-header
+        .close-nav
+            i.fas.fa-times
+        span.sidenav-heading Menu
+    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        i.fas.fa-user
+        |  Usuario
+    .dropdown-menu(aria-labelledby='navbarDropdown' role='menu')
+        a.dropdown-item(href='Login') Ingresar
+        a.dropdown-item(href='https://supercable.herokuapp.com/index.php')
+            i.fas.fa-sign-in-alt
+            |  Ingresar (Beta)
+        a.dropdown-item(href='UserRegister') Registrarme
+    hr.my-4
+    a(href='Inicio' title='')
+        i.fas.fa-home
+        |  Inicio
+    a(href='layout' title='')
+        i.fas.fa-search
+        |  Buscador
+    a(href='BuscadorMaster' title='')
+        i.fas.fa-search-plus
+        |  Buscador (Beta)
+    a(href='#' title='')
+        i.fas.fa-book-reader
+        |  Blog
+    a.activesb(href='ForumMenu' title='')
+        i.fab.fa-wpforms
+        |  Foro
+    a(href='AcercaDe' title='')
+        i.fas.fa-question-circle
+        |  Acerca de
+//
+// Optional JavaScript
+// jQuery first, then Popper.js, then Bootstrap JS
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js' integrity='sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em' crossorigin='anonymous')
+script(src='../static/forum/sidenav.js')
+script(src='../static/forum/validarCaracteres.js')
+

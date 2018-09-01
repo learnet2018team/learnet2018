@@ -1,0 +1,251 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+body{
+    background-color: rgba(36, 193, 255, 0.322);
+}
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 10%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.jumbotron-heading {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+  font-size: 45px;
+  color: white;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+}
+
+.navbar.navbar-dark {
+    /*background-color: #2F2F2F;*/
+    background-color: rgba(104, 103, 103, 0.486);
+}
+
+#logo {
+  width: 50px;
+}
+
+#logoletters {
+  width: 150px;
+  margin-left: 30px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.carousel-item img {
+  filter: brightness(0.4);
+  max-height: 560px;
+  min-height: 670px;
+}
+
+.input-group-append .btn.btn-outline-secondary {
+  color: white;
+  font-weight: bold;
+  border-color: white;
+}
+
+.input-group-append .btn.btn-outline-secondary:active {
+  color: black;
+  box-shadow: white;
+}
+
+.btn-group button {
+  border-radius: 18px;
+}
+
+.input-group {
+  margin-top: 20px;
+}
+
+#button-addon2 {
+  border-top-right-radius: 20px;
+}
+
+.form-control {
+  border-bottom-left-radius: 20px;
+  padding: 22px;
+}
+
+.btn.btn-outline-secondary:hover {
+  background-color: #21b2d6;
+}
+
+/*Sidenav*/
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  background-color: rgb(56, 56, 56);
+  transform: translateX(100%);
+  transition: all 0.3s;
+  z-index: 10;
+  -webkit-box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 30px 1px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 768px) {
+  .sidenav {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidenav {
+    width: 30%;
+  }
+}
+
+.close-nav {
+  position: absolute;
+  font-size: 40px;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  top: 7px;
+  left: 15px;
+  padding: 0;
+  transition: ease-in .15s;
+  color: rgb(148, 148, 148);
+}
+
+.close-nav:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.sidenav a {
+  color: rgb(180, 180, 180);
+  position: relative;
+  padding-left: 0;
+  display: block;
+  left: 0;
+  width: 100%;
+  padding: 15px 5px 15px 20px;
+  transition: ease-in 0.3s
+
+}
+.sidenav a:hover{
+  text-decoration: none;
+  background-color: #0D9EFF;
+  
+}
+.sidenav-show {
+  transform: translateX(0);
+}
+
+.sidenav-show::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidenav-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  border-color: #0D9EFF;
+  border-color: rgb(32, 32, 32);
+}
+
+.sidenav-toggler:focus,
+.sidenav-toggler:hover {
+  text-decoration: none;
+}
+
+.sidenav-toggler:not(:disabled):not(.disabled) {
+  cursor: pointer
+}
+
+.sidenav-header {
+  background-color: #2b2b2b;
+  height: 60px;
+}
+
+.sidenav-heading {
+  position: absolute;
+  right: 20px;
+  font-size: 35px;
+  color: rgb(148, 148, 148);
+}
+.box5 ul li a:hover{
+  text-decoration: none;
+}
+.dropdown-menu{
+  background-color: rgb(119, 119, 119);
+  width: 100%;
+  margin-right: -10px;  
+}
+hr.my-4{
+  margin: 0 !important;
+  background-color: rgb(88, 88, 88);
+}
+footer.text-muted{
+  border-top: 1px solid #21b2d6;
+  margin-top: 40px;
+  background-color:rgb(206, 206, 206);
+}
+.dropdown-menu a{
+  color: rgb(206, 206, 206);
+}
+.dropdown-menu a:hover{
+  background-color: #616161;
+}
+.activesb{
+  text-decoration: none;
+  background-color: #313131;
+}

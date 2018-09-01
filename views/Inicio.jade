@@ -1,0 +1,50 @@
+doctype html
+head
+  meta(http-equiv='content-type' content='text/html; charset=UTF-8')
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description' content='')
+  meta(name='author' content='')
+  link(rel='icon' href='../graduation-cap-solid.svg')
+  title Bienvenido a LearNet
+  // Bootstrap core CSS
+  link(href='../static/cover/bootstrap.css' rel='stylesheet')
+  // Custom styles for this template
+  link(href='../static/cover/cover.css' rel='stylesheet')
+.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.text-center
+  header.masthead.mb-auto
+    .inner
+      h3.masthead-brand
+        img.img-fluid.pull-xs-left(style='max-width: 160px; ' src='../static/img/LogoLettersWhite.png' alt='...')
+      nav.nav.nav-masthead.justify-content-center
+        a.nav-link.active(href='#') Inicio
+        a.nav-link(href='#') Nosotros
+        a.nav-link(href='AcercaDe') Contacto
+  main.inner.cover(role='main')
+    h1.cover-heading Bienvenido a LearNet&reg;.
+    p.lead
+      | LearNet&reg; es una plataforma web en la que podras encontrar una gran cantidad de
+      | servicios educativos que se encuentran en internet (cursos online, paginas web, foros, asesores, canales de YouTube, etc...), pero tambien podras encontrar distintos lugares tales como
+      | instituciones educativas, bibliotecas, librerias y museos que esten cercanos a tu ubicacion.
+    p.lead
+      | De esta manera, todos tienen la posibilidad de acceder a la educacion, donde quiera que esten.
+    p.lead
+      a.btn.btn-lg(href='UserRegister') Registrarme
+  footer.mastfoot.mt-auto
+    .inner
+      p
+        | LearNet - 2018. Tienes dudas? ve a nuestro 
+        a(href='ForumMenu') Foro
+        | , o 
+        a(href='UserRegister') Registrate ahora
+        |  para comenzar a usar LearNet.
+//
+  Bootstrap core JavaScript
+  ==================================================
+// Placed at the end of the document so the pages load faster
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='../static/forum/validarCaracteres.js')
+script.
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\\/script>')
+script(src='../static/forum/popper.js')
+script(src='../static/forum/bootstrap.js')

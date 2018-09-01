@@ -1,0 +1,101 @@
+doctype html
+head
+    meta(http-equiv='content-type' content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css' integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ' crossorigin='anonymous')
+    link(rel='icon' href='../graduation-cap-solid.svg')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js ')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js')
+    title Ingresar - LearNet
+    // Bootstrap core CSS
+    link(href='../static/login/bootstrap.css' rel='stylesheet')
+    // Custom styles for this template
+    link(href='../static/login/Login.css' rel='stylesheet')
+#containerBackGround
+    img(src='../static/login/chalkboard.jpg')
+form.form-signin
+    .container
+        .text-center.mb-4
+            a(href='../Cover/cover.html')
+                img.img-fluid(style='max-width: 150px; height: auto;' src='../static/login/LogoImage.svg' alt='Responsive Image' width='170' height='170')
+            h1.h3.mb-3.font-weight-normal Ingresa Aqu&iacute;
+        .form-label-group
+            input#inputEmail.form-control(placeholder='Correo electronico' required='' autofocus='' type='email')
+            label(for='inputEmail') Correo electronico
+        .form-label-group
+            input#inputPassword.form-control(placeholder='Contraseña' required='' type='password')
+            label(for='inputPassword') Contrase&ntilde;a
+        .checkbox.mb-3
+            label
+                input(value='remember-me' type='checkbox')
+                |  Recuerdame
+        button.btn.btn-lg.btn-primary.btn-block(type='submit') Ingresar
+    p.mt-5.mb-3.text-center &copy; LearNet-2018
+button.sidenav-toggler(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
+    span.texto-vertical Menu
+// Sidenav Here
+.sidenav
+    .container.sidenav-header
+        .close-nav
+            i.fas.fa-times
+        span.sidenav-heading Menu
+    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        i.fas.fa-user
+        |  Usuario
+    .dropdown-menu(aria-labelledby='navbarDropdown' role='menu')
+        a.dropdown-item(href='Login') Ingresar
+        a.dropdown-item(href='https://supercable.herokuapp.com/index.php')
+            i.fas.fa-sign-in-alt
+            |  Ingresar (Beta)
+        a.dropdown-item(href='UserRegister') Registrarme
+    hr.my-4
+    a(href='Inicio' title='')
+        i.fas.fa-home
+        |  Inicio
+    a(href='layout' title='')
+        i.fas.fa-search
+        |  Buscador
+    a(href='BuscadorMaster' title='')
+        i.fas.fa-search-plus
+        |  Buscador (Beta)
+    a(href='#' title='')
+        i.fas.fa-book-reader
+        |  Blog
+    a.activesb(href='ForumMenu' title='')
+        i.fab.fa-wpforms
+        |  Foro
+    a(href='AcercaDe' title='')
+        i.fas.fa-question-circle
+        |  Acerca de
+//
+// Scripts de la pagina
+script.
+    var timeout;
+    $('#containerBackGround').mousemove(function (e) {
+        if (timeout) clearTimeout(timeout);
+        setTimeout(callParallax.bind(null, e), 200);
+    });
+    function callParallax(e) {
+        //parallaxIt(e, '.slide', -100);
+        parallaxIt(e, '#containerBackGround', -30);
+    }
+    function parallaxIt(e, target, movement) {
+        var $this = $('#containerBackGround');
+        var relX = e.pageX - $this.offset().left;
+        var relY = e.pageY - $this.offset().top;
+        TweenMax.to(target, 1, {
+            x: (relX - $this.width() / 2) / $this.width() * movement,
+            y: (relY - $this.height() / 2) / $this.height() * movement,
+            ease: Power2.easeOut
+        })
+    }
+
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js' integrity='sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em' crossorigin='anonymous')
+script(src='../static/forum/sidenav.js')
+

@@ -1,0 +1,56 @@
+Primeros pasos
+1:(instalado node -v  and npm )
+2:(npm install -g express-generator)
+3:(express learnet) nombre del proyecto (NOS CREA EL PROYECTO BASE)
+4:(npm install)instar los paquetes dentro de la carpeta anterior creada
+5:(npm start) correr el servidor
+5.1: (https://html-to-pug.com/)converson de html a pug o jade
+6:(npm install --save pg) instalar el paquete de postgresql
+7:(repositorio en github) => (learnet_2018_fedesoft)
+8:(postgresql) => url  directa (postgres://izteaxiwbxmnih:d4c9531c5a100b8b9dc0123b7c277c146145b1851fbff8b1f7e698d86f05c190@ec2-54-243-216-33.compute-1.amazonaws.com:5432/dd9avmnqoubhtc
+)
+9:(Configuracion de la base de datos Postgresql)
+Host :: ec2-54-235-86-226.compute-1.amazonaws.com
+Database :: d4c74ofj98nt54
+User :: bqpcbjyohbgyaf
+Port :: 5432
+Password :: 6a386ffc585489c27af73834294688e4bcd4008440de971e46ad99d5fbde1db6
+UIR :: postgres://bqpcbjyohbgyaf:6a386ffc585489c27af73834294688e4bcd4008440de971e46ad99d5fbde1db6@ec2-54-235-86-226.compute-1.amazonaws.com:5432/d4c74ofj98nt54
+
+
+10:(https://learnetteam.herokuapp.com/) URL en heroku
+11:(https://github.com/CamiloYate09/learnet_2018_fedesoft) github repositorio
+
+12: (heroku learnet2019@gmail.com contraseña: App2018team@ ) usuario y contraseña para heroku
+
+14: (https://github.com/ionic-team/ionic-conference-app) aplicacion ionic para descargar de github y compilar
+
+<<<<<<< HEAD
+=======
+15: {Juan} Finalizar la migracion de HTML a jade
+15.1: {Juan} Completar navegacion de la pagina
+15.2: {Juan} Ajustes de diseño y adaptabilidad en el login y el resto de vistas
+
+
+16: Base de datos
+tabla usuarios
+CREATE TABLE USUARIOS(
+ID_USUARIO SERIAL PRIMARY KEY,
+NOMBRE VARCHAR(30) NOT NULL,
+APELLIDO VARCHAR(30) NOT NULL,
+EDAD VARCHAR(10) NOT NULL,
+CUIDAD VARCHAR(30) NOT NULL,
+PAIS VARCHAR(30) NOT NULL,
+CORREO VARCHAR(30) NOT NULL,
+CONTRASENA VARCHAR(100) NOT NULL,
+CURSOS VARCHAR(250) NOT NULL
+
+
+);
+
+ALTER TABLE CONTRASEÑA RENAME TO CONTRASENA;
+SELECT * FROM USUARIOS;
+INSERT INTO USUARIOS(NOMBRE,APELLIDO,EDAD,CUIDAD,PAIS,CORREO,CONTRASENA,CURSOS) VALUES('juan','morales','17','Bogota','Colombia','juan@estudiantesfedesoft.com','fedesoft','Diseño Grafico - Aplicaiones Moviles - Marketing Digital')
+
+
+
