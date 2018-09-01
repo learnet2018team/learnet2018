@@ -1,9 +1,9 @@
 
-# [learnet_2018_fedesoft]() &middot;  [![Circle CI Status](https://circleci.com/gh/facebook/react-native.svg?style=shield)](https://circleci.com/gh/facebook/react-native) [![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=6.2.0&x2=0)](https://badge.fury.io/js/react-native) [![PRssd Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
+# [learnet_2018_fedesoft]  Colombia-Bogota() &middot;  [![Circle CI Status](https://circleci.com/gh/facebook/react-native.svg?style=shield)](https://circleci.com/gh/facebook/react-native) [![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=6.2.0&x2=0)](https://badge.fury.io/js/react-native) [![PRssd Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
 
 
 <h1>Tecnologias Utilizadas</h1>
-<img src="https://ih1.redbubble.net/image.109336634.1604/flat,550x550,075,f.u1.jpg" width="30"> Node.js  </img>
+<img src="https://ih1.redbubble.net/image.109336634.1604/flat,550x550,075,f.u1.jpg" width="50"> Node.js  </img>
 
 <img src="https://cdn0.froala.com/assets/editor/docs/server/meta-social/php-00441489844a0103eae71ba2fe15244c.png" width="50"> PHP </img>
 
