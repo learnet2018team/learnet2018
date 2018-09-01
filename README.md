@@ -5,6 +5,8 @@
 <h1>Tecnologias Utilizadas</h1>
 <img src="https://ih1.redbubble.net/image.109336634.1604/flat,550x550,075,f.u1.jpg" width="50"> Node.js</img>
 
+<img src="https://cdn0.froala.com/assets/editor/docs/server/meta-social/php-00441489844a0103eae71ba2fe15244c.png" width="50"> PHP </img>
+
 <img src="https://buddy.works/guides/thumbnails/cover-heroku.png" width="50"> Heroku</img>
 
 
