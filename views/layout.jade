@@ -15,11 +15,10 @@ head
     link(href='static/SearchPage.css' rel='stylesheet')
     link(rel='stylesheet' href='static/animations.css')
 header
-    .navbar.navbar-dark.shadow-sm
+    .navbar.navbar-dark.shadow-sm#headerandfooter
         .container.d-flex.justify-content-between
             a.navbar-brand.d-flex.align-items-center(href='#')
-                img#logo.img-fluid.pull-xs-left(src='static/img/LogoImage.png' alt='LogoLN')
-                img#logoletters.img-fluid.pull-xs-left(src='static/img/LogoLettersWhite.png' alt='Learnet')
+                img#logo.img-fluid.pull-xs-left(src='static/img/Logo.png' alt='LogoLN')
             button.sidenav-toggler(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
                 span.navbar-toggler-icon
 main(role='main')
@@ -131,20 +130,31 @@ main(role='main')
                                 i.fa.fa-twitter
 
 //                    ********************************
-footer.text-muted
-    .container
-        p.float-right
-            a(href='#') Volver arriba
-        p LearNet. La educacion a tu alcance.
-        p
-            | Eres nuevo?
-            a(href='/html_master/UserRegister.jade') Registrate!
-            |  o visita nuestro
-            a(href='/html_master/ForumMenu.jade') Foro
-            | . donde nuestra comunidad te ayudara sin dudarlo.
+
+footer.footer.row.mt-5#headerandfooter
+  .container.mt-5
+    .row
+      .col-md-12.mt-5.text-center
+        h1 LearNet, aprendizaje al alcance de tu mano
+        h4 Eres nuevo? 
+            a(style="color:rgb(207, 207, 207)" href='/html_master/UserRegister.jade') Registrate!
+        h4 Visita nuestras redes sociales para saber mas de LearNet
+        p.social-icons-header
+          a(href='facebook.com')
+            i.fab.fa-facebook
+          a(href='facebook.com')
+            i.fab.fa-twitter-square
+          a(href='facebook.com')
+            i.fab.fa-github-square
+          a(href='facebook.com')
+            i.fab.fa-linkedin
+      .col-md-12.text-center.mt-5
+        h5
+          | LearNet - 2018
+
 // Sidenav Here
 .sidenav
-    .container.sidenav-header
+    .container.sidenav-header#headerandfooter
         .close-nav
             i.fas.fa-times
         span.sidenav-heading Menu
@@ -161,7 +171,7 @@ footer.text-muted
     a(href='Inicio' title='')
         i.fas.fa-home
         |  Inicio
-    a(href='layout' title='')
+    a.activesb#headerandfooter(href='layout' title='')
         i.fas.fa-search
         |  Buscador
     a(href='BuscadorMaster' title='')
@@ -170,7 +180,7 @@ footer.text-muted
     a(href='#' title='')
         i.fas.fa-book-reader
         |  Blog
-    a.activesb(href='ForumMenu' title='')
+    a(href='ForumMenu' title='')
         i.fab.fa-wpforms
         |  Foro
     a(href='AcercaDe' title='')

@@ -24,7 +24,7 @@ body {
 }
 
 #logo {
-    width: 50px;
+    height: 50px;
 }
 
 #logoletters {
@@ -38,6 +38,7 @@ body {
 
 /*fin del navbar*/
 
+
 /*Sidenav*/
 
 .sidenav {
@@ -47,7 +48,7 @@ body {
     width: 80%;
     height: 100vh;
     border-right: 1px solid #ddd;
-    background-color: rgb(56, 56, 56);
+    background-color: rgba(37, 36, 36, 0.89);
     transform: translateX(100%);
     transition: all 0.3s;
     z-index: 10;
@@ -78,11 +79,11 @@ body {
     left: 15px;
     padding: 0;
     transition: ease-in .15s;
-    color: rgb(148, 148, 148);
+    color: white;
 }
 
 .close-nav:hover {
-    color: white;
+    color: rgb(148, 148, 148);
     cursor: pointer;
 }
 
@@ -100,6 +101,7 @@ body {
 .sidenav a:hover {
     text-decoration: none;
     background-color: #0D9EFF;
+    color: black
 }
 
 .sidenav-show {
@@ -124,6 +126,7 @@ body {
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: .25rem;
+    border-color: #0D9EFF;
     border-color: rgb(32, 32, 32);
 }
 
@@ -139,15 +142,13 @@ body {
 .sidenav-header {
     background-color: #2b2b2b;
     height: 60px;
-    width: 100%;
-    margin: 0 0 0 0;
 }
 
 .sidenav-heading {
     position: absolute;
     right: 20px;
     font-size: 35px;
-    color: rgb(148, 148, 148);
+    color: white;
 }
 
 .box5 ul li a:hover {
@@ -155,24 +156,75 @@ body {
 }
 
 .dropdown-menu {
-    background-color: rgb(119, 119, 119);
+    background-color: rgba(20, 177, 177, 0.938);
     width: 100%;
     margin-right: -10px;
 }
 
-.sidenav .my-4 {
+hr.my-4 {
     margin: 0 !important;
     background-color: rgb(88, 88, 88);
 }
 
+footer.text-muted {
+    border-top: 1px solid #21b2d6;
+    margin-top: 40px;
+    background-color: rgb(206, 206, 206);
+}
+
 .dropdown-menu a {
-    color: rgb(206, 206, 206);
+    color: white;
 }
 
 .dropdown-menu a:hover {
-    background-color: #616161;
+    background-color: rgba(15, 153, 153, 0.938);
 }
 
+.activesb {
+    text-decoration: none;
+    background-color: #313131;
+}
+
+#headerandfooter {
+    color: white;
+    border-top: 1px solid rgb(19, 168, 161);
+    background-color: rgb(9, 94, 9);
+    background: linear-gradient(20deg, rgb(7, 117, 7), rgb(13, 189, 174), rgb(3, 29, 100));
+    /*Change colors as you want*/
+    background-size: 1000% 1000% !important;
+    -webkit-animation: changeColors 20s ease infinite;
+    -moz-animation: changeColors 20s ease infinite;
+    -o-animation: changeColors 20s ease infinite;
+    animation: changeColors 20s ease infinite;
+}
+
+@-webkit-keyframes changeColors {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.social-icons-header a {
+    font-size: 40px;
+    margin: 10px;
+    color: black;
+}
+
+.social-icons-header a i {
+    transition: all 0.5s;
+}
+
+.social-icons-header a i:hover {
+    color: white;
+}
 /*fin del sidenav*/
 
 /*Footer*/
